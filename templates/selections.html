@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendation Chatbot</title>
+  <link rel="stylesheet" href="/static/css/selections.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+25:wght@400&display=swap" />
+</head>
+<body>
+  <div class="chat-layout">
+    <!-- left navigation -->
+    <div class="navigationchatbot-change">
+      <a href="selections" class="find-your-program current-page">Find your Program</a>
+      <a href="application_helper" class="application-helper">Application Helper</a>
+      <a href="application_overview" class="program-overview">Program Overview</a>
+    </div>
+
+    <!-- logo and user info -->
+    <div class="logo-and-user">
+      <div class="logo-section">
+        <img class="image-1-icon" alt="Logo" src="/static/User_Interface/OIG4.jpeg">
+        <span class="your-professional-ai">Your Professional AI assistant</span>
+      </div>
+      <div class="log-in">
+        <span id="authButton"><a href="/login">Log in</a></span>
+      </div>
+      <div class="rectangle-div"></div>
+    </div>
+
+    <!-- main content -->
+    <div class="chatbot">
+      <!-- chatbot area -->
+      <div class="chat-interface" id="chatInterface">
+        <div class="chat-message assistant">
+          <img class="assistant-avatar" src="/static/User_Interface/OIG4.jpeg" alt="Assistant Avatar">
+          <div class="bubble">Hello! How can I assist you in selecting a university program?</div>
+        </div>
+      </div>
+
+      <!-- chat message-->
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Enter your message here...">
+        <button class="send-button" id="sendButton">Send</button>
+      </div>
+
+      <!-- result recommendation -->
+      <section>
+        <h2>Recommended Programs</h2>
+        <div id="results" class="results-container"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="/static/js/selections.js"></script>
+  <script src="/static/js/auth.js"></script>
+</body>
+</html>

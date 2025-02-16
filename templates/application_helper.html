@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Page</title>
+  <link rel="stylesheet" href="/static/css/application_helper.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+25:wght@400&display=swap">
+</head>
+<body>
+  <div class="chat-layout">
+    <!-- left navigation -->
+    <div class="navigationchatbot-change">
+      <a href="/selections" class="find-your-program">Find your Program</a>
+      <a href="/application_helper" class="application-helper">Application Helper</a>
+      <a href="/application_overview" class="program-overview">Program Overview</a>
+    </div>
+
+    <!-- top navigation -->
+    <div class="logo-and-user">
+      <div class="logo-section">
+        <img class="image-1-icon" alt="Logo" src="/static/User_Interface/OIG4.jpeg">
+        <div class="your-professional-ai">Your Professional AI assistant</div>
+      </div>
+      <div class="log-in">
+        <span id="authButton"><a href="/login">Log in</a></span>
+      </div>
+      <div class="rectangle-div"></div>
+    </div>
+
+    <!--chatbot area -->
+    <div class="chatbot">
+      <div class="chat-interface" id="chatInterface">
+        <!-- initial chat message -->
+        <div class="chat-message assistant">
+          <img class="assistant-avatar" src="/static/User_Interface/OIG4.jpeg" alt="Assistant Logo">
+          <div class="bubble">Hello! How can I assist you today?</div>
+        </div>
+      </div>
+
+      <!-- input and pdf upload -->
+      <div class="chat-input">
+        <label class="file-upload">
+          <input type="file" id="fileInput" accept="application/pdf">
+          📄 Upload PDF
+        </label>
+        <input type="text" id="userInput" placeholder="Enter your message here">
+        <button type="submit" class="send-button" id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="/static/js/application.js"></script>
+  <script src="/static/js/auth.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+  	<script>
+    		var findYourProgram = document.getElementById("findYourProgram");
+    		if(findYourProgram) {
+      			findYourProgram.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+
+    		var exploreProgramsText = document.getElementById("exploreProgramsText");
+    		if(exploreProgramsText) {
+      			exploreProgramsText.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}</script></body>
+</html>

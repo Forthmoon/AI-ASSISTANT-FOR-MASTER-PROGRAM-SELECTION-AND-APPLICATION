@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Overview</title>
+    <link rel="stylesheet" href="/static/css/application_overview.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+25:wght@400&display=swap">
+</head>
+<body>
+    <div class="application-overview">
+        <!-- left navigation -->
+        <div class="navigationchatbot-change">
+            <a href="/selections" class="find-your-program">Find your Program</a>
+            <a href="/application_helper" class="application-helper">Application Helper</a>
+            <a href="/application_overview" class="program-overview">Program Overview</a>
+        </div>
+        
+        <!-- Logo and User info -->
+        <div class="logo-and-user">
+            <div class="logo-section">
+                <img class="image-1-icon" alt="Logo" src="/static/User_Interface/OIG4.jpeg">
+                <div class="your-professional-ai">Your Professional AI assistant</div>
+            </div>
+            <div class="log-in">
+                <span id="authButton"><a href="/login">Log in</a></span>
+            </div>            
+            <div class="rectangle-div"></div>
+        </div>
+
+        <!-- main content -->
+        <div class="chatbot">
+            <div class="my-programs-overview">My Programs Overview</div>
+
+            <div id="saved-programs"></div>
+
+            <!-- Summary PDF  -->
+            <div class="summary-button-container">
+                <button class="summary-pdf-button" id="generateSummary">Generate Summary PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/auth.js"></script>
+    <script src="/static/js/overview.js"></script>
+</body>
+</html>
