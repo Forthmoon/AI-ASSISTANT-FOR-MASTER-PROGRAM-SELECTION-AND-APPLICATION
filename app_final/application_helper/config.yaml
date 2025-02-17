@@ -1,0 +1,5 @@
+config:
+  # API keys for external services
+  api_keys:
+    openai: "your open ai key"
+
